@@ -1,5 +1,6 @@
 import asyncio
 import json
+import socket
 import uuid
 
 import websockets
@@ -113,7 +114,10 @@ async def websocket_loop():
     global ws_connection
 
     print(f"Connecting to broker: {BROKER_URL}")
-    async with websockets.connect(BROKER_URL) as ws:
+    async with websockets.connect(
+        BROKER_URL,
+        family=socket.AF_INET,
+    ) as ws:
         ws_connection = ws
         print("WebSocket connected")
 
@@ -121,6 +125,7 @@ async def websocket_loop():
 
         async for message in ws:
             await handle_server_message(message)
+
 
 # =========================================================
 # Main
