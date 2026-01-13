@@ -4,25 +4,18 @@ from collections import defaultdict
 
 import websockets
 
-# =========================================================
-# Configuration
-# =========================================================
+# Config
+HOST = "127.0.0.1"
+PORT = 8765
 
-LISTEN_HOST = "127.0.0.1"
-LISTEN_PORT = 8765
 
-# =========================================================
 # Global state
-# =========================================================
-
 clients = {}  # client_id -> websocket
 subscriptions = defaultdict(list)  # client_id -> [topics]
 published_topics = defaultdict(set)  # client_id -> set(addresses)
 
-# =========================================================
-# Topic matching
-# =========================================================
 
+# Topic matching
 def topic_matches(address: str, pattern: str) -> bool:
     if pattern == "/*":
         return True
@@ -30,10 +23,8 @@ def topic_matches(address: str, pattern: str) -> bool:
         return address.startswith(pattern[:-1])
     return address == pattern
 
-# =========================================================
-# State broadcast
-# =========================================================
 
+# State broadcast
 async def broadcast_state():
     state_msg = {
         "type": "state",
@@ -126,8 +117,8 @@ async def handle_client(ws):
 # =========================================================
 
 async def main():
-    print(f"Starting netOSC server on {LISTEN_HOST}:{LISTEN_PORT}")
-    async with websockets.serve(handle_client, LISTEN_HOST, LISTEN_PORT):
+    print(f"Starting netOSC server on {HOST}:{PORT}")
+    async with websockets.serve(handle_client, HOST, PORT):
         await asyncio.Future()  # run forever
 
 if __name__ == "__main__":

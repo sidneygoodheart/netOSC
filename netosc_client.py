@@ -162,17 +162,17 @@ def print_status():
     print(f"  Broker: {BROKER_URL}")
     print(f"  Connected: {'yes' if ws_connection else 'no'}")
     print(f"  Subscriptions: {SUBSCRIBE_TOPICS}")
-    print(f"  Known clients: {len(known_clients)}")
+    print(f"  TX clients: {len(known_clients)}")
 
 
 def print_known_clients():
     if not known_clients:
-        print("No known clients")
+        print("No TX clients")
         return
 
-    print("Known clients:")
+    print("TX clients:")
     for cid, topics in known_clients.items():
-        print(f"  {cid}")
+        print(f"  {cid} {'(You)'if cid == CLIENT_ID else ''}")
         for t in topics:
             print(f"    - {t}")
 
@@ -188,7 +188,7 @@ async def command_loop():
     print("  -x            exit")
     print("  -t <topics>   set topics (comma-separated)")
     print("  -s            status")
-    print("  -l            list known clients")
+    print("  -l            list known sending clients")
     print()
 
     while not exit_event.is_set():
