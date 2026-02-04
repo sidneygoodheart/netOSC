@@ -3,39 +3,35 @@ import csv
 import json
 import time
 import base64
-from pathlib import Path
 
 from pythonosc.dispatcher import Dispatcher
 from pythonosc.osc_server import AsyncIOOSCUDPServer
 from pythonosc.udp_client import SimpleUDPClient
 
-#
-# The tester replays a fixed dataset of OSC messages cyclically at a configurable rate.
-# For each message, the round-trip time is measured upon reception of the reflected message.
-#
-
 # =========================================================
 # Configuration
 # =========================================================
-
-DATASET_FILE = "netosc_test_dataset.jsonl"
-OUTPUT_FILE = "rtt_results.csv"
-
-MESSAGES_PER_SECOND = 50
+MESSAGES_PER_SECOND = 500
 DURATION_SECONDS = 30
 
+DATASET_FILE = "netosc_test_dataset.jsonl"
+OUTPUT_FILE = f"netOSC{MESSAGES_PER_SECOND}.csv"
+
+# netOSC client A
 SEND_IP = "127.0.0.1"
 SEND_PORT = 9000      # netOSC client A listens here
 
-RECV_IP = "127.0.0.1"
-RECV_PORT = 8000      # tester receives replies here
+# tester receives replies here
+RECV_IP = "0.0.0.0"
+RECV_PORT = 8000      # must match client A target port
 
 # =========================================================
-# Load dataset
+# Load dataset (NO timestamps inside)
 # =========================================================
 
-def load_dataset(path: str):
+def load_dataset(path):
     dataset = []
+
     with open(path, "r") as f:
         for line in f:
             entry = json.loads(line)
@@ -49,17 +45,19 @@ def load_dataset(path: str):
                 entry["topic"],
                 payload
             ))
-    return dataset
 
+    return dataset
 
 # =========================================================
 # RTT measurement
 # =========================================================
 
+START_TIME = time.monotonic()
+
 results = []
 
 async def recv_handler(address, seq_id, send_ts, payload):
-    recv_ts = time.time()
+    recv_ts = time.monotonic() - START_TIME
     rtt = recv_ts - send_ts
     results.append((seq_id, address, rtt))
 
@@ -84,9 +82,8 @@ async def start_receiver():
     print(f"Tester listening on {RECV_IP}:{RECV_PORT}")
     return transport
 
-
 # =========================================================
-# Sender
+# Sender (cyclic replay, timestamp injected here)
 # =========================================================
 
 async def sender(dataset, messages_per_second, duration_seconds):
@@ -100,11 +97,11 @@ async def sender(dataset, messages_per_second, duration_seconds):
 
     for i in range(max_messages):
         seq, topic, payload = dataset[i % dataset_len]
-        ts = time.time()
-        osc_out.send_message(topic, (seq, ts, payload))
+
+        send_ts = time.monotonic() - START_TIME
+        osc_out.send_message(topic, (seq, send_ts, payload))
+
         await asyncio.sleep(interval)
-
-
 
 # =========================================================
 # Main
@@ -122,8 +119,8 @@ async def main():
         DURATION_SECONDS
     )
 
-    # Allow late packets to arrive
-    await asyncio.sleep(2)
+    # allow late packets to arrive
+    await asyncio.sleep(3)
 
     recv_transport.close()
 
@@ -132,7 +129,14 @@ async def main():
         writer.writerow(["seq_id", "topic", "rtt_seconds"])
         writer.writerows(results)
 
-    print(f"Wrote {len(results)} RTT samples to {OUTPUT_FILE}")
+    sent = int(MESSAGES_PER_SECOND * DURATION_SECONDS)
+    received = len(results)
+
+    print(f"Sent: {sent}, Received: {received}")
+    if sent > 0:
+        print(f"Loss rate: {(sent - received) / sent:.2%}")
+
+    print(f"Wrote {received} RTT samples to {OUTPUT_FILE}")
 
 
 if __name__ == "__main__":
