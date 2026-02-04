@@ -1,163 +1,283 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1088 394">
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1135.01 411.02">
   <!-- Generator: Adobe Illustrator 30.1.0, SVG Export Plug-In . SVG Version: 2.1.1 Build 136)  -->
   <defs>
     <style>
-      .st0 {
-        letter-spacing: .72em;
-      }
-
-      .st1 {
-        letter-spacing: .72em;
-      }
-
-      .st2, .st3, .st4, .st5 {
+      .st0, .st1, .st2, .st3, .st4 {
         stroke: #000;
       }
 
-      .st2, .st4 {
+      .st0, .st3 {
         fill: none;
       }
 
-      .st6 {
-        font-family: ArialMT, Arial;
-        font-size: 18px;
+      .st5, .st6, .st7, .st8 {
         isolation: isolate;
       }
 
-      .st3 {
+      .st5, .st6, .st8 {
+        font-family: ArialMT, Arial;
+        font-size: 18px;
+      }
+
+      .st1 {
         fill: #f1f1f1;
       }
 
-      .st3, .st7 {
+      .st1, .st9 {
         stroke-width: .5px;
       }
 
-      .st8 {
-        letter-spacing: .73em;
+      .st2 {
+        fill: #fff;
+        stroke-miterlimit: 10;
       }
 
-      .st9 {
-        letter-spacing: .2em;
-      }
-
-      .st10 {
-        letter-spacing: .62em;
-      }
-
-      .st11 {
-        letter-spacing: .61em;
-      }
-
-      .st12 {
-        letter-spacing: .45em;
-      }
-
-      .st4 {
-        stroke-dasharray: 7 7;
-      }
-
-      .st13 {
-        letter-spacing: .07em;
-      }
-
-      .st14 {
-        letter-spacing: .19em;
-      }
-
-      .st15 {
-        letter-spacing: 1.7em;
-      }
-
-      .st16 {
-        letter-spacing: .44em;
-      }
-
-      .st17 {
-        letter-spacing: .49em;
-      }
-
-      .st18 {
-        letter-spacing: .28em;
-      }
-
-      .st19 {
-        letter-spacing: .48em;
-      }
-
-      .st20 {
-        letter-spacing: .61em;
-      }
-
-      .st21 {
-        letter-spacing: .67em;
-      }
-
-      .st22 {
+      .st6 {
         letter-spacing: .06em;
       }
 
-      .st23 {
-        letter-spacing: .5em;
+      .st3 {
+        stroke-dasharray: 7 7;
       }
 
-      .st24 {
-        letter-spacing: .71em;
+      .st8 {
+        letter-spacing: .07em;
       }
 
-      .st7 {
+      .st9 {
         fill: #fafafa;
         stroke: #181818;
       }
     </style>
   </defs>
+  <rect class="st2" width="1135.01" height="411.02"/>
   <g id="ent0002">
-    <rect class="st3" x="7" y="196.48" width="217.89" height="61.91" rx="2.5" ry="2.5"/>
-    <text class="st6" transform="translate(17 223.19)"><tspan x="0" y="0">OSC</tspan><tspan class="st14" x="39.01" y="0"> </tspan><tspan x="47.5" y="0">Client</tspan><tspan class="st14" x="93.52" y="0"> </tspan><tspan x="102.02" y="0">A</tspan></text>
-    <text class="st6" transform="translate(17 244.14)"><tspan x="0" y="0">(e.g.</tspan><tspan class="st20" x="36.02" y="0"> </tspan><tspan x="51.94" y="0">Gesture</tspan><tspan class="st20" x="115.97" y="0"> </tspan><tspan x="131.89" y="0">System)</tspan></text>
+    <rect class="st1" x="30.5" y="204.99" width="217.89" height="61.91" rx="2.5" ry="2.5"/>
+    <g class="st7">
+      <g class="st7">
+        <text class="st5" transform="translate(40.5 231.7)"><tspan x="0" y="0">OSC</tspan></text>
+      </g>
+      <g class="st7">
+        <text class="st5" transform="translate(88 231.7)"><tspan x="0" y="0">Client</tspan></text>
+      </g>
+      <g class="st7">
+        <text class="st5" transform="translate(142.52 231.7)"><tspan x="0" y="0">A</tspan></text>
+      </g>
+    </g>
+    <g class="st7">
+      <g class="st7">
+        <text class="st5" transform="translate(40.5 252.65)"><tspan x="0" y="0">(e.g.</tspan></text>
+      </g>
+      <g class="st7">
+        <text class="st5" transform="translate(92.44 252.65)"><tspan x="0" y="0">Gesture</tspan></text>
+      </g>
+      <g class="st7">
+        <text class="st5" transform="translate(172.39 252.65)"><tspan x="0" y="0">System)</tspan></text>
+      </g>
+    </g>
   </g>
   <g id="ent0003">
-    <rect class="st3" x="861.42" y="214.48" width="220.65" height="61.91" rx="2.5" ry="2.5"/>
-    <text class="st6" transform="translate(871.42 241.19)"><tspan x="0" y="0">OSC</tspan><tspan class="st9" x="39.01" y="0"> </tspan><tspan x="47.52" y="0">Client</tspan><tspan class="st9" x="93.54" y="0"> </tspan><tspan x="102.06" y="0">B</tspan></text>
-    <text class="st6" transform="translate(871.42 262.14)"><tspan x="0" y="0">(e.g.</tspan><tspan class="st16" x="36.02" y="0"> </tspan><tspan x="48.86" y="0">Lighting</tspan><tspan class="st16" x="111.92" y="0"> </tspan><tspan x="124.76" y="0">/</tspan><tspan class="st16" x="129.76" y="0"> </tspan><tspan x="142.61" y="0">Sound)</tspan></text>
+    <rect class="st1" x="884.92" y="222.99" width="220.65" height="61.91" rx="2.5" ry="2.5"/>
+    <g class="st7">
+      <g class="st7">
+        <text class="st5" transform="translate(894.92 249.7)"><tspan x="0" y="0">OSC</tspan></text>
+      </g>
+      <g class="st7">
+        <text class="st5" transform="translate(942.44 249.7)"><tspan x="0" y="0">Client</tspan></text>
+      </g>
+      <g class="st7">
+        <text class="st5" transform="translate(996.98 249.7)"><tspan x="0" y="0">B</tspan></text>
+      </g>
+    </g>
+    <g class="st7">
+      <g class="st7">
+        <text class="st5" transform="translate(894.92 270.65)"><tspan x="0" y="0">(e.g.</tspan></text>
+      </g>
+      <g class="st7">
+        <text class="st5" transform="translate(943.78 270.65)"><tspan x="0" y="0">Lighting</tspan></text>
+      </g>
+      <g class="st7">
+        <text class="st5" transform="translate(1019.68 270.65)"><tspan x="0" y="0">/</tspan></text>
+      </g>
+      <g class="st7">
+        <text class="st5" transform="translate(1037.53 270.65)"><tspan x="0" y="0">Sound)</tspan></text>
+      </g>
+    </g>
   </g>
   <g id="ent0004">
-    <rect class="st3" x="433.9" y="113.48" width="219.32" height="61.91" rx="2.5" ry="2.5"/>
-    <text class="st6" transform="translate(443.9 140.19)"><tspan x="0" y="0">netOSC</tspan><tspan class="st11" x="64.03" y="0"> </tspan><tspan x="80.07" y="0">Broker</tspan></text>
-    <text class="st6" transform="translate(443.9 161.14)"><tspan x="0" y="0">(Discovery</tspan><tspan class="st0" x="85.01" y="0"> </tspan><tspan x="102.89" y="0">+</tspan><tspan class="st1" x="113.4" y="0"> </tspan><tspan x="131.28" y="0">Routing)</tspan></text>
+    <rect class="st1" x="457.4" y="121.99" width="219.32" height="61.91" rx="2.5" ry="2.5"/>
+    <g class="st7">
+      <g class="st7">
+        <text class="st5" transform="translate(467.4 148.7)"><tspan x="0" y="0">netOSC</tspan></text>
+      </g>
+      <g class="st7">
+        <text class="st5" transform="translate(547.47 148.7)"><tspan x="0" y="0">Broker</tspan></text>
+      </g>
+    </g>
+    <g class="st7">
+      <g class="st7">
+        <text class="st5" transform="translate(467.4 169.65)"><tspan x="0" y="0">(Discovery</tspan></text>
+      </g>
+      <g class="st7">
+        <text class="st5" transform="translate(570.29 169.65)"><tspan x="0" y="0">+</tspan></text>
+      </g>
+      <g class="st7">
+        <text class="st5" transform="translate(598.68 169.65)"><tspan x="0" y="0">Routing)</tspan></text>
+      </g>
+    </g>
   </g>
   <g id="ent0009">
-    <path class="st7" d="M421.69,6v72.86h117.87l4,34.5,4-34.5h117.85V16l-10-10h-233.72"/>
-    <path class="st7" d="M655.41,6v10h10l-10-10"/>
-    <text class="st6" transform="translate(427.69 27.71)"><tspan x="0" y="0">Current</tspan><tspan class="st15" x="60.02" y="0"> </tspan><tspan x="95.66" y="0">implementation:</tspan></text>
-    <text class="st6" transform="translate(427.66 48.66)"><tspan x="0" y="0">All</tspan><tspan class="st18" x="20" y="0"> </tspan><tspan x="30.12" y="0">OSC</tspan><tspan class="st18" x="69.13" y="0"> </tspan><tspan x="79.25" y="0">messages</tspan><tspan class="st18" x="161.29" y="0"> </tspan><tspan x="171.4" y="0">are</tspan></text>
-    <text class="st6" transform="translate(427.69 69.61)"><tspan x="0" y="0">routed</tspan><tspan class="st17" x="51.04" y="0"> </tspan><tspan x="64.84" y="0">via</tspan><tspan class="st17" x="87.85" y="0"> </tspan><tspan x="101.66" y="0">the</tspan><tspan class="st17" x="126.68" y="0"> </tspan><tspan x="140.48" y="0">broker</tspan></text>
+    <path class="st9" d="M445.19,14.51v72.86h117.87l4,34.5,4-34.5h117.85V24.51l-10-10h-233.72"/>
+    <path class="st9" d="M678.91,14.51v10h10l-10-10"/>
+    <g class="st7">
+      <g class="st7">
+        <text class="st5" transform="translate(451.19 36.22)"><tspan x="0" y="0">Current</tspan></text>
+      </g>
+      <g class="st7">
+        <text class="st5" transform="translate(546.85 36.22)"><tspan x="0" y="0">implementation:</tspan></text>
+      </g>
+    </g>
+    <g class="st7">
+      <g class="st7">
+        <text class="st5" transform="translate(451.16 57.17)"><tspan x="0" y="0">All</tspan></text>
+      </g>
+      <g class="st7">
+        <text class="st5" transform="translate(481.28 57.17)"><tspan x="0" y="0">OSC</tspan></text>
+      </g>
+      <g class="st7">
+        <text class="st5" transform="translate(530.41 57.17)"><tspan x="0" y="0">messages</tspan></text>
+      </g>
+      <g class="st7">
+        <text class="st5" transform="translate(622.56 57.17)"><tspan x="0" y="0">are</tspan></text>
+      </g>
+    </g>
+    <g class="st7">
+      <g class="st7">
+        <text class="st5" transform="translate(451.19 78.12)"><tspan x="0" y="0">routed</tspan></text>
+      </g>
+      <g class="st7">
+        <text class="st5" transform="translate(516.03 78.12)"><tspan x="0" y="0">via</tspan></text>
+      </g>
+      <g class="st7">
+        <text class="st5" transform="translate(552.85 78.12)"><tspan x="0" y="0">the</tspan></text>
+      </g>
+      <g class="st7">
+        <text class="st5" transform="translate(591.67 78.12)"><tspan x="0" y="0">broker</tspan></text>
+      </g>
+    </g>
   </g>
   <g id="ent0012">
-    <path class="st7" d="M433.81,293.56v93.81h219.48v-83.81l-10-10h-95.74l-4-26.96-4,26.96h-105.74"/>
-    <path class="st7" d="M643.29,293.56v10h10l-10-10"/>
-    <text class="st6" transform="translate(439.81 315.26)"><tspan x="0" y="0">Optional</tspan><tspan class="st21" x="67.04" y="0"> </tspan><tspan x="84.16" y="0">direct</tspan><tspan class="st21" x="128.18" y="0"> </tspan><tspan x="145.29" y="0">path</tspan></text>
-    <text class="st6" transform="translate(439.81 336.22)"><tspan x="0" y="0">if</tspan><tspan class="st24" x="9" y="0"> </tspan><tspan x="26.7" y="0">network</tspan><tspan class="st24" x="89.73" y="0"> </tspan><tspan x="107.43" y="0">conditions</tspan></text>
-    <text class="st6" transform="translate(439.81 357.17)"><tspan x="0" y="0">allow;</tspan><tspan class="st8" x="46.02" y="0"> </tspan><tspan x="64.22" y="0">broker</tspan><tspan class="st8" x="115.24" y="0"> </tspan><tspan x="133.44" y="0">retained</tspan></text>
-    <text class="st6" transform="translate(439.81 378.12)"><tspan x="0" y="0">as</tspan><tspan class="st10" x="19.01" y="0"> </tspan><tspan x="35.24" y="0">fallback</tspan></text>
+    <path class="st9" d="M457.31,302.07v93.81h219.48v-83.81l-10-10h-95.74l-4-26.96-4,26.96h-105.74"/>
+    <path class="st9" d="M666.79,302.07v10h10l-10-10"/>
+    <g class="st7">
+      <g class="st7">
+        <text class="st5" transform="translate(463.31 323.77)"><tspan x="0" y="0">Optional</tspan></text>
+      </g>
+      <g class="st7">
+        <text class="st5" transform="translate(547.47 323.77)"><tspan x="0" y="0">direct</tspan></text>
+      </g>
+      <g class="st7">
+        <text class="st5" transform="translate(608.6 323.77)"><tspan x="0" y="0">path</tspan></text>
+      </g>
+    </g>
+    <g class="st7">
+      <g class="st7">
+        <text class="st5" transform="translate(463.31 344.73)"><tspan x="0" y="0">if</tspan></text>
+      </g>
+      <g class="st7">
+        <text class="st5" transform="translate(490.01 344.73)"><tspan x="0" y="0">network</tspan></text>
+      </g>
+      <g class="st7">
+        <text class="st5" transform="translate(570.74 344.73)"><tspan x="0" y="0">conditions</tspan></text>
+      </g>
+    </g>
+    <g class="st7">
+      <g class="st7">
+        <text class="st5" transform="translate(463.31 365.68)"><tspan x="0" y="0">allow;</tspan></text>
+      </g>
+      <g class="st7">
+        <text class="st5" transform="translate(527.53 365.68)"><tspan x="0" y="0">broker</tspan></text>
+      </g>
+      <g class="st7">
+        <text class="st5" transform="translate(596.75 365.68)"><tspan x="0" y="0">retained</tspan></text>
+      </g>
+    </g>
+    <g class="st7">
+      <g class="st7">
+        <text class="st5" transform="translate(463.31 386.63)"><tspan x="0" y="0">as</tspan></text>
+      </g>
+      <g class="st7">
+        <text class="st5" transform="translate(498.55 386.63)"><tspan x="0" y="0">fallback</tspan></text>
+      </g>
+    </g>
   </g>
   <g id="lnk5">
-    <path id="ClientA-to-Broker" class="st2" d="M225.18,206.33c63.9-12.46,138.67-27.04,202.68-39.53"/>
-    <polygon class="st5" points="433.75 165.65 424.15 163.45 428.84 166.61 425.68 171.3 433.75 165.65"/>
-    <text class="st6" transform="translate(273.17 151.14)"><tspan class="st22" x="0" y="0">WebSocke</tspan><tspan x="96.19" y="0">t</tspan></text>
-    <text class="st6" transform="translate(256.69 172.09)"><tspan x="0" y="0">OSC</tspan><tspan class="st12" x="39.01" y="0"> </tspan><tspan x="52.12" y="0">messages</tspan></text>
+    <path id="ClientA-to-Broker" class="st0" d="M248.68,214.84c63.9-12.46,138.67-27.04,202.68-39.53"/>
+    <polygon class="st4" points="457.25 174.16 447.65 171.96 452.34 175.12 449.18 179.81 457.25 174.16"/>
+    <g class="st7">
+      <g class="st7">
+        <text class="st6" transform="translate(296.67 159.65)"><tspan x="0" y="0">WebSocke</tspan></text>
+      </g>
+      <g class="st7">
+        <text class="st5" transform="translate(392.86 159.65)"><tspan x="0" y="0">t</tspan></text>
+      </g>
+    </g>
+    <g class="st7">
+      <g class="st7">
+        <text class="st5" transform="translate(280.19 180.6)"><tspan x="0" y="0">OSC</tspan></text>
+      </g>
+      <g class="st7">
+        <text class="st5" transform="translate(332.31 180.6)"><tspan x="0" y="0">messages</tspan></text>
+      </g>
+    </g>
   </g>
   <g id="lnk6">
-    <path id="Broker-to-ClientB" class="st2" d="M653.48,170.25c63.63,15.08,137.85,32.67,201.63,47.78"/>
-    <polygon class="st5" points="860.95 219.41 853.11 213.44 856.08 218.26 851.27 221.23 860.95 219.41"/>
-    <text class="st6" transform="translate(712.9 158.14)"><tspan class="st22" x="0" y="0">WebSocke</tspan><tspan x="96.19" y="0">t</tspan></text>
-    <text class="st6" transform="translate(696.42 179.09)"><tspan x="0" y="0">OSC</tspan><tspan class="st12" x="39.01" y="0"> </tspan><tspan x="52.12" y="0">messages</tspan></text>
+    <path id="Broker-to-ClientB" class="st0" d="M676.98,178.76c63.63,15.08,137.85,32.67,201.63,47.78"/>
+    <polygon class="st4" points="884.45 227.92 876.61 221.95 879.58 226.77 874.77 229.74 884.45 227.92"/>
+    <g class="st7">
+      <g class="st7">
+        <text class="st6" transform="translate(736.4 166.65)"><tspan x="0" y="0">WebSocke</tspan></text>
+      </g>
+      <g class="st7">
+        <text class="st5" transform="translate(832.59 166.65)"><tspan x="0" y="0">t</tspan></text>
+      </g>
+    </g>
+    <g class="st7">
+      <g class="st7">
+        <text class="st5" transform="translate(719.92 187.6)"><tspan x="0" y="0">OSC</tspan></text>
+      </g>
+      <g class="st7">
+        <text class="st5" transform="translate(772.04 187.6)"><tspan x="0" y="0">messages</tspan></text>
+      </g>
+    </g>
   </g>
   <g id="lnk7">
-    <path id="ClientA-to-ClientB" class="st4" d="M225.37,240.27c58.13,6.25,131.03,13.06,196.32,16.16,152.26,7.23,322.49,1.44,433.36-4.15"/>
-    <polygon class="st5" points="861.04 251.98 851.85 248.44 856.05 252.23 852.25 256.43 861.04 251.98"/>
-    <text class="st6" transform="translate(466.06 210.14)"><tspan x="0" y="0">Peer-to-Peer</tspan><tspan class="st19" x="103.04" y="0"> </tspan><tspan x="116.75" y="0">OSC</tspan></text>
-    <text class="st6" transform="translate(478.9 231.09)"><tspan x="0" y="0">(e.g.</tspan><tspan class="st23" x="36.02" y="0"> </tspan><tspan x="50.08" y="0">WebRTC)</tspan></text>
-    <text class="st6" transform="translate(494.33 252.04)"><tspan class="st13" x="0" y="0">conceptua</tspan><tspan x="95.21" y="0">l</tspan></text>
+    <path id="ClientA-to-ClientB" class="st3" d="M248.87,248.78c58.13,6.25,131.03,13.06,196.32,16.16,152.26,7.23,322.49,1.44,433.36-4.15"/>
+    <polygon class="st4" points="884.54 260.49 875.35 256.95 879.55 260.74 875.75 264.94 884.54 260.49"/>
+    <g class="st7">
+      <g class="st7">
+        <text class="st5" transform="translate(489.56 218.65)"><tspan x="0" y="0">Peer-to-Peer</tspan></text>
+      </g>
+      <g class="st7">
+        <text class="st5" transform="translate(606.31 218.65)"><tspan x="0" y="0">OSC</tspan></text>
+      </g>
+    </g>
+    <g class="st7">
+      <g class="st7">
+        <text class="st5" transform="translate(502.4 239.6)"><tspan x="0" y="0">(e.g.</tspan></text>
+      </g>
+      <g class="st7">
+        <text class="st5" transform="translate(552.48 239.6)"><tspan x="0" y="0">WebRTC)</tspan></text>
+      </g>
+    </g>
+    <g class="st7">
+      <g class="st7">
+        <text class="st8" transform="translate(517.83 260.55)"><tspan x="0" y="0">conceptua</tspan></text>
+      </g>
+      <g class="st7">
+        <text class="st5" transform="translate(613.04 260.55)"><tspan x="0" y="0">l</tspan></text>
+      </g>
+    </g>
   </g>
 </svg>
