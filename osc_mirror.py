@@ -4,10 +4,10 @@ from pythonosc.osc_server import AsyncIOOSCUDPServer
 from pythonosc.udp_client import SimpleUDPClient
 
 LISTEN_IP = "127.0.0.1"
-LISTEN_PORT = 9000      # mirror listens here
+LISTEN_PORT = 8000      # mirror listens here
 
 TARGET_IP = "127.0.0.1"
-TARGET_PORT = 8000     # send back to tester via netOSC client
+TARGET_PORT = 9000     # send back to tester via netOSC client
 
 osc_out = SimpleUDPClient(TARGET_IP, TARGET_PORT)
 
